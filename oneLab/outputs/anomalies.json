@@ -1,0 +1,259 @@
+[
+  {
+    "gap_type": "unmatched_platform_transactions",
+    "count": 988,
+    "classification": "true exception",
+    "explanation": "988 platform transaction(s) have no matching bank settlement.",
+    "proof_preview": [
+      {
+        "transaction_id": "txn_da54cd2828",
+        "order_id": "ord_901eb971fd",
+        "customer_id": "cust_10",
+        "txn_amount": 2248.21,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-01-12 15:47:18",
+        "bank_transaction_id": null,
+        "bank_order_id": null,
+        "bank_amount": null,
+        "bank_currency": null
+      },
+      {
+        "transaction_id": "txn_85c48c39ca",
+        "order_id": "ord_16c945aea1",
+        "customer_id": "cust_62",
+        "txn_amount": 3644.98,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-01-12 20:03:46",
+        "bank_transaction_id": null,
+        "bank_order_id": null,
+        "bank_amount": null,
+        "bank_currency": null
+      },
+      {
+        "transaction_id": "txn_e39333a393",
+        "order_id": "ord_5be546632e",
+        "customer_id": "cust_159",
+        "txn_amount": 2549.42,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-01-27 18:04:26",
+        "bank_transaction_id": null,
+        "bank_order_id": null,
+        "bank_amount": null,
+        "bank_currency": null
+      }
+    ]
+  },
+  {
+    "gap_type": "unmatched_bank_settlements",
+    "count": 0,
+    "classification": "true exception",
+    "explanation": "— no rows found —",
+    "proof_preview": []
+  },
+  {
+    "gap_type": "duplicate_platform_rows",
+    "count": 1,
+    "classification": "true exception",
+    "explanation": "1 duplicate platform rows detected (same transaction_id).",
+    "proof_preview": [
+      {
+        "transaction_id": "txn_f61759d423",
+        "order_id": "ord_33c502147d",
+        "customer_id": "cust_57",
+        "amount": 3889.52,
+        "currency": "inr",
+        "timestamp": "2025-03-07 10:35:16",
+        "status": "success",
+        "source_system": "mobile"
+      }
+    ]
+  },
+  {
+    "gap_type": "duplicate_bank_rows",
+    "count": 2,
+    "classification": "true exception",
+    "explanation": "2 duplicate bank settlement rows detected (same transaction_id).",
+    "proof_preview": [
+      {
+        "settlement_id": "set_5a6e32e81c",
+        "transaction_id": "txn_f61759d423",
+        "order_id": "ord_33c502147d",
+        "customer_id": "cust_57",
+        "amount": 3889.52,
+        "currency": "inr",
+        "settlement_date": "2025-03-08",
+        "timestamp": "2026-03-27 12:51:48.815904",
+        "status": "settled",
+        "source_system": "bank_api"
+      },
+      {
+        "settlement_id": "set_c7d1bfc05c",
+        "transaction_id": "txn_f61759d423",
+        "order_id": "ord_33c502147d",
+        "customer_id": "cust_57",
+        "amount": 3889.52,
+        "currency": "inr",
+        "settlement_date": "2025-03-08",
+        "timestamp": "2026-03-27 12:51:48.843451",
+        "status": "settled",
+        "source_system": "bank_api"
+      }
+    ]
+  },
+  {
+    "gap_type": "duplicate_business_key_platform",
+    "count": 1,
+    "classification": "true exception",
+    "explanation": "1 platform rows share the same order_id + amount + currency.",
+    "proof_preview": [
+      {
+        "transaction_id": "txn_f61759d423",
+        "order_id": "ord_33c502147d",
+        "customer_id": "cust_57",
+        "amount": 3889.52,
+        "currency": "inr",
+        "timestamp": "2025-03-07 10:35:16",
+        "status": "success",
+        "source_system": "mobile"
+      }
+    ]
+  },
+  {
+    "gap_type": "duplicate_business_key_bank",
+    "count": 2,
+    "classification": "true exception",
+    "explanation": "2 bank rows share the same order_id + amount + currency.",
+    "proof_preview": [
+      {
+        "settlement_id": "set_5a6e32e81c",
+        "transaction_id": "txn_f61759d423",
+        "order_id": "ord_33c502147d",
+        "customer_id": "cust_57",
+        "amount": 3889.52,
+        "currency": "inr",
+        "settlement_date": "2025-03-08",
+        "timestamp": "2026-03-27 12:51:48.815904",
+        "status": "settled",
+        "source_system": "bank_api"
+      },
+      {
+        "settlement_id": "set_c7d1bfc05c",
+        "transaction_id": "txn_f61759d423",
+        "order_id": "ord_33c502147d",
+        "customer_id": "cust_57",
+        "amount": 3889.52,
+        "currency": "inr",
+        "settlement_date": "2025-03-08",
+        "timestamp": "2026-03-27 12:51:48.843451",
+        "status": "settled",
+        "source_system": "bank_api"
+      }
+    ]
+  },
+  {
+    "gap_type": "refunds_without_originals",
+    "count": 1,
+    "classification": "true exception",
+    "explanation": "1 refund transaction(s) have no matching original successful transaction.",
+    "proof_preview": [
+      {
+        "transaction_id": "txn_1f225fb1f1",
+        "order_id": "ord_missing_order",
+        "customer_id": "cust_58",
+        "amount": -4020.6,
+        "currency": "inr",
+        "timestamp": "2025-01-16 01:35:46",
+        "status": "refunded",
+        "source_system": "mobile"
+      }
+    ]
+  },
+  {
+    "gap_type": "rounding_only_mismatches",
+    "count": 43,
+    "classification": "expected timing issue",
+    "explanation": "43 matched pair(s) differ by a tiny amount (within rounding tolerance).",
+    "proof_preview": [
+      {
+        "transaction_id": "txn_c8308aa804",
+        "order_id": "ord_9be564463a",
+        "customer_id": "cust_64",
+        "txn_amount": 4038.32,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-01-24 08:53:14",
+        "bank_transaction_id": "txn_c8308aa804",
+        "bank_order_id": "ord_9be564463a",
+        "bank_amount": 4038.28,
+        "bank_currency": "inr"
+      },
+      {
+        "transaction_id": "txn_ad28da6b25",
+        "order_id": "ord_3e2609b18d",
+        "customer_id": "cust_37",
+        "txn_amount": 135.0,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-02-21 21:21:53",
+        "bank_transaction_id": "txn_ad28da6b25",
+        "bank_order_id": "ord_3e2609b18d",
+        "bank_amount": 135.03,
+        "bank_currency": "inr"
+      },
+      {
+        "transaction_id": "txn_f9f0d12f1f",
+        "order_id": "ord_9e0b9873d4",
+        "customer_id": "cust_158",
+        "txn_amount": 2916.83,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-03-22 23:24:08",
+        "bank_transaction_id": "txn_f9f0d12f1f",
+        "bank_order_id": "ord_9e0b9873d4",
+        "bank_amount": 2916.82,
+        "bank_currency": "inr"
+      }
+    ]
+  },
+  {
+    "gap_type": "late_settlements_crossing_month_boundary",
+    "count": 31,
+    "classification": "expected timing issue",
+    "explanation": "31 settlement(s) crossed a calendar-month boundary within the normal lag window.",
+    "proof_preview": [
+      {
+        "transaction_id": "txn_0189f0e576",
+        "order_id": "ord_4c6a88da65",
+        "customer_id": "cust_33",
+        "txn_amount": 2391.99,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-03-30 18:46:06",
+        "bank_transaction_id": "txn_0189f0e576",
+        "bank_order_id": "ord_4c6a88da65",
+        "bank_amount": 2391.99,
+        "bank_currency": "inr"
+      },
+      {
+        "transaction_id": "txn_7550a1f253",
+        "order_id": "ord_6feedd9320",
+        "customer_id": "cust_29",
+        "txn_amount": 2133.02,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-01-30 03:48:53",
+        "bank_transaction_id": "txn_7550a1f253",
+        "bank_order_id": "ord_6feedd9320",
+        "bank_amount": 2133.02,
+        "bank_currency": "inr"
+      },
+      {
+        "transaction_id": "txn_ed70931b17",
+        "order_id": "ord_ba36604d8f",
+        "customer_id": "cust_1",
+        "txn_amount": 1229.11,
+        "txn_currency": "inr",
+        "txn_timestamp": "2025-02-28 02:33:09",
+        "bank_transaction_id": "txn_ed70931b17",
+        "bank_order_id": "ord_ba36604d8f",
+        "bank_amount": 1229.11,
+        "bank_currency": "inr"
+      }
+    ]
+  }
+]

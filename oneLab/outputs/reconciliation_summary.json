@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-03-27T12:51:49.630298",
+  "records": {
+    "platform_transactions": 2002,
+    "bank_settlements": 1014,
+    "reconciled_rows": 2002
+  },
+  "matching": {
+    "matched_rows": 1014,
+    "unmatched_rows": 988,
+    "match_rate_pct": 50.65
+  },
+  "amounts": {
+    "platform_total_inr": 5033649.79,
+    "bank_total_inr": 2572680.13
+  },
+  "gap_counts": {
+    "unmatched_platform_transactions": 988,
+    "unmatched_bank_settlements": 0,
+    "duplicate_platform_rows": 1,
+    "duplicate_bank_rows": 2,
+    "duplicate_business_key_platform": 1,
+    "duplicate_business_key_bank": 2,
+    "refunds_without_originals": 1,
+    "rounding_only_mismatches": 43,
+    "late_settlements_crossing_month_boundary": 31
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "month": "2025-01",
+    "platform_txn_count": 728,
+    "platform_amount": 1803676.81,
+    "bank_settlement_count": 328,
+    "bank_amount": 860382.35,
+    "late_cross_month_count": 16,
+    "count_gap": 400,
+    "amount_gap": 943294.46
+  },
+  {
+    "month": "2025-02",
+    "platform_txn_count": 619,
+    "platform_amount": 1530826.98,
+    "bank_settlement_count": 342,
+    "bank_amount": 826076.88,
+    "late_cross_month_count": 9,
+    "count_gap": 277,
+    "amount_gap": 704750.1
+  },
+  {
+    "month": "2025-03",
+    "platform_txn_count": 655,
+    "platform_amount": 1699146.0,
+    "bank_settlement_count": 315,
+    "bank_amount": 815028.98,
+    "late_cross_month_count": 6,
+    "count_gap": 340,
+    "amount_gap": 884117.02
+  },
+  {
+    "month": "2025-04",
+    "platform_txn_count": 0,
+    "platform_amount": 0.0,
+    "bank_settlement_count": 27,
+    "bank_amount": 66011.87,
+    "late_cross_month_count": 0,
+    "count_gap": -27,
+    "amount_gap": -66011.87
+  },
+  {
+    "month": "2025-05",
+    "platform_txn_count": 0,
+    "platform_amount": 0.0,
+    "bank_settlement_count": 2,
+    "bank_amount": 5180.05,
+    "late_cross_month_count": 0,
+    "count_gap": -2,
+    "amount_gap": -5180.05
+  }
+]
